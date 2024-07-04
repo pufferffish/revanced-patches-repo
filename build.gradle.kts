@@ -7,7 +7,7 @@ plugins {
     signing
 }
 
-group = "app.revanced"
+group = "oct.revanced"
 
 repositories {
     mavenCentral()
@@ -35,8 +35,8 @@ kotlin {
 tasks {
     withType(Jar::class) {
         manifest {
-            attributes["Name"] = "ReVanced Patches template"
-            attributes["Description"] = "Patches template for ReVanced."
+            attributes["Name"] = "Personal ReVanced Patches"
+            attributes["Description"] = "Personal patches for ReVanced."
             attributes["Version"] = version
             attributes["Timestamp"] = System.currentTimeMillis().toString()
             attributes["Source"] = "git@github.com:revanced/revanced-patches-template.git"
@@ -96,8 +96,8 @@ publishing {
             from(components["java"])
 
             pom {
-                name = "ReVanced Patches template"
-                description = "Patches template for ReVanced."
+                name = "Personal ReVanced Patches"
+                description = "Personal patches for ReVanced."
                 url = "https://revanced.app"
 
                 licenses {
