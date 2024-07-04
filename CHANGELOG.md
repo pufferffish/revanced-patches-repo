@@ -1,3 +1,10 @@
+# 1.0.0 (2024-07-04)
+
+
+### Features
+
+* **boc:** test ([3082495](https://github.com/pufferffish/revanced-patches-repo/commit/308249567b4f206de3ce7f263f4b91e783dcedbd))
+
 # 1.0.0-dev.1 (2024-07-04)
 
 
