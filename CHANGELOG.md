@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/pufferffish/revanced-patches-repo/compare/v1.0.5...v1.1.0) (2024-07-05)
+
+
+### Features
+
+* **boc:** patch out accessibility detection ([5c76956](https://github.com/pufferffish/revanced-patches-repo/commit/5c7695626fb5df99312c015e1579d4bf84e34aaa))
+
 ## [1.0.5](https://github.com/pufferffish/revanced-patches-repo/compare/v1.0.4...v1.0.5) (2024-07-05)
 
 
