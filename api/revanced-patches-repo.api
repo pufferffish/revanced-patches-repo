@@ -1,6 +1,20 @@
-public final class app/revanced/patches/boc/BOCPatch : app/revanced/patcher/patch/BytecodePatch {
+public final class app/revanced/patches/boc/BOCPatch : app/revanced/patches/hkbank/BypassBankPatch {
 	public static final field INSTANCE Lapp/revanced/patches/boc/BOCPatch;
+}
+
+public class app/revanced/patches/hkbank/BypassBankPatch : app/revanced/patcher/patch/BytecodePatch {
+	public fun <init> (Lapp/revanced/patches/hkbank/fingerprints/LoadLibraryFingerprint;)V
 	public fun execute (Lapp/revanced/patcher/data/BytecodeContext;)V
 	public synthetic fun execute (Lapp/revanced/patcher/data/Context;)V
+	public final fun getFingerprint ()Lapp/revanced/patches/hkbank/fingerprints/LoadLibraryFingerprint;
+}
+
+public class app/revanced/patches/hkbank/fingerprints/LoadLibraryFingerprint : app/revanced/patcher/fingerprint/MethodFingerprint {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun getLibNameLen ()Ljava/lang/String;
+}
+
+public final class app/revanced/patches/hsbchk/HSBCHKPatch : app/revanced/patches/hkbank/BypassBankPatch {
+	public static final field INSTANCE Lapp/revanced/patches/hsbchk/HSBCHKPatch;
 }
 
