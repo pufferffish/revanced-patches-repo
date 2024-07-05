@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/pufferffish/revanced-patches-repo/compare/v1.0.2...v1.0.3) (2024-07-05)
+
+
+### Bug Fixes
+
+* CI publishing ([2f2b699](https://github.com/pufferffish/revanced-patches-repo/commit/2f2b699448a12d9395fe6504e972d9f060e1b72b))
+* CI publishing again ([1604248](https://github.com/pufferffish/revanced-patches-repo/commit/160424850f87cacf859a000b4649c52ad74b1f8f))
+
 ## [1.0.2](https://github.com/pufferffish/revanced-patches-repo/compare/v1.0.1...v1.0.2) (2024-07-05)
 
 
