@@ -15,7 +15,7 @@ repositories {
     google()
     maven {
         // A repository must be speficied for some reason. "registry" is a dummy.
-        url = uri("https://maven.pkg.github.com/pufferffish/revanced-patches-repo")
+        url = uri("https://maven.pkg.github.com/revanced/registry")
         credentials {
             username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
             password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
@@ -116,9 +116,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = "scm:git:git://github.com/revanced/revanced-patches-template.git"
-                    developerConnection = "scm:git:git@github.com:revanced/revanced-patches-template.git"
-                    url = "https://github.com/revanced/revanced-patches-template"
+                    connection = "scm:git:git://github.com/pufferffish/revanced-patches-repo.git"
+                    developerConnection = "scm:git:git@github.com:pufferffish/revanced-patches-repo.git"
+                    url = "https://github.com/pufferffish/revanced-patches-repo"
                 }
             }
         }
