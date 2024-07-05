@@ -82,17 +82,6 @@ tasks {
 }
 
 publishing {
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/pufferffish/revanced-patches-repo")
-            credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
-            }
-        }
-    }
-
     publications {
         create<MavenPublication>("revanced-patches-publication") {
             from(components["java"])
