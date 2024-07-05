@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/pufferffish/revanced-patches-repo/compare/v1.0.1...v1.0.2) (2024-07-05)
+
+
+### Bug Fixes
+
+* **boc:** test ([8d15b6a](https://github.com/pufferffish/revanced-patches-repo/commit/8d15b6a420b1fd799f5b388e932067aa907fda4a))
+* CI ([8dac897](https://github.com/pufferffish/revanced-patches-repo/commit/8dac897c82c72bc852b5b5250264cba6e6f56b78))
+* CI ([8e7364f](https://github.com/pufferffish/revanced-patches-repo/commit/8e7364fb26422550e90e74794440c138f756e698))
+
 ## [1.0.1](https://github.com/pufferffish/revanced-patches-repo/compare/v1.0.0...v1.0.1) (2024-07-04)
 
 
