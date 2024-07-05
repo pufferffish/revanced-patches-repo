@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/pufferffish/revanced-patches-repo/compare/v1.1.0...v1.2.0) (2024-07-05)
+
+
+### Features
+
+* **hsbc:** patch out HSBC HK accessibility detection ([f75e180](https://github.com/pufferffish/revanced-patches-repo/commit/f75e180cb9b0da106ab673c1663e6e8d6374252c))
+
 # [1.1.0](https://github.com/pufferffish/revanced-patches-repo/compare/v1.0.5...v1.1.0) (2024-07-05)
 
 
