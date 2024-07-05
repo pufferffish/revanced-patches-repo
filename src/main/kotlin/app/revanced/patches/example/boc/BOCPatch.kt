@@ -1,6 +1,7 @@
 package app.revanced.patches.example.boc
 
 import app.revanced.patcher.data.BytecodeContext
+import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.patch.BytecodePatch
 import app.revanced.patcher.patch.annotation.CompatiblePackage
 import app.revanced.patcher.patch.annotation.Patch
@@ -14,9 +15,15 @@ import app.revanced.patches.example.boc.fingerprints.LoadLibraryFingerprint
     ],
 )
 @Suppress("unused")
-object BOCPatch : BytecodePatch(emptySet()) {
+object BOCPatch : BytecodePatch(setOf(LoadLibraryFingerprint)) {
     override fun execute(context: BytecodeContext) {
-        val loadLibraryMethod = LoadLibraryFingerprint.result?.mutableMethod
-        println(loadLibraryMethod?.definingClass + "#" + loadLibraryMethod?.name)
+        val loadLibraryClass = LoadLibraryFingerprint.result?.mutableClass!!
+        println("Found loadLibrary class: $loadLibraryClass")
+        loadLibraryClass.methods
+            .filter { m -> m.returnType == "V" && m.implementation != null && !setOf("<clinit>", "<init>").contains(m.name) }
+            .forEach { m ->
+                m.addInstructions(0, "return-void")
+                println("Neutered $m")
+            }
     }
 }
